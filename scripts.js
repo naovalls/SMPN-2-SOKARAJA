@@ -1,15 +1,15 @@
+// Menampilkan halaman yang dipilih
 function showPage(pageId) {
-    // Hide all pages
-    const pages = document.querySelectorAll('.page');
-    pages.forEach(page => {
-        page.style.display = 'none';
+    // Sembunyikan semua section dengan class "page"
+    document.querySelectorAll('.page').forEach((section) => {
+        section.style.display = 'none';
     });
 
-    // Show the selected page
+    // Tampilkan section yang dipilih
     document.getElementById(pageId).style.display = 'block';
 }
 
-// Show the Beranda page by default
+// Menampilkan halaman beranda secara default saat halaman dimuat
 document.addEventListener('DOMContentLoaded', () => {
     showPage('beranda');
 });
