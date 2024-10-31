@@ -50,3 +50,12 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Tambahan untuk gambar */
+img {
+    width: 100%; /* Memastikan gambar mengambil lebar penuh kontainer */
+    max-width: 600px; /* Memastikan gambar tidak melebihi 600px */
+    height: auto; /* Memastikan rasio aspek tetap */
+    display: block; /* Menghilangkan ruang di bawah gambar */
+    margin: 0 auto; /* Memusatkan gambar */
+}
